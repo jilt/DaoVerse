@@ -1,7 +1,6 @@
 # DaoVerse
 DAOVERSE RnDAO hackathon submission
 
-# DaoVerse
 ![Daoverse](./utils/Daoverse.png)
 
 ## A complete governance system for renting and selling land tokens
