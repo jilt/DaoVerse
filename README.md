@@ -1,7 +1,7 @@
 # DaoVerse
 DAOVERSE RnDAO hackathon submission
 
-![Daoverse](./utils/daoverse.png)
+![Daoverse](./utils/daoverse-git.png)
 
 ## A complete governance system for renting and selling room tokens
 Welcome to Daoverse, a comprehensive governance system designed for renting and selling room tokens. The Daoverse Token is ERC4907 compatible, allowing owners to rent out their room NFTs without transferring ownership. This unique capability enables various complex scenarios, empowering roomowners to securely lease their property to contractors for predetermined durations and fees.
