@@ -3,7 +3,7 @@ DAOVERSE RnDAO hackathon submission
 
 ![Daoverse](./utils/daoverse.png)
 
-## A complete governance system for renting and selling land tokens
+## A complete governance system for renting and selling room tokens
 Welcome to Daoverse, a comprehensive governance system designed for renting and selling room tokens. The Daoverse Token is ERC4907 compatible, allowing owners to rent out their room NFTs without transferring ownership. This unique capability enables various complex scenarios, empowering roomowners to securely lease their property to contractors for predetermined durations and fees.
 Rooms can be equipped with all sorts of collaborative tools, the one we developed for the RndHackathon is a RAG (LLM interacting with a database of organizational psychology resources), the RAG is called Eva and requires land owners to submit an on-chan message (only gas fees) in order to give an answer, this allows both the land owner/project founder to get resources in a psychologivally safe environment (which the blockchain is not in particular for people who get money for good ideas) from a refined version of one of the most powerful AI on the market today and in return the DAO members can retrieve the messages for a give address onchain and see the situation with clarity.
 Humble.ai has reached out to me to try their new voice emphatic model recently and I would gladly submit this project to them if the hackathon goes well.
