@@ -3,8 +3,8 @@ DAOVERSE RnDAO hackathon submission
 
 ![Daoverse](./utils/daoverse-git.png)
 
-## A complete governance system for renting and selling room tokens
-Welcome to Daoverse, a comprehensive governance system designed for renting and selling room tokens. The Daoverse Token is ERC4907 compatible, allowing owners to rent out their room NFTs without transferring ownership. This unique capability enables various complex scenarios, empowering roomowners to securely lease their property to contractors for predetermined durations and fees.
+## A complete DAO governance system using rentable and sellable room tokens
+Welcome to Daoverse, a comprehensive governance system designed for renting and selling room tokens that enable DAO proposals. The Daoverse Token is ERC4907 compatible, allowing owners to rent out their room NFTs without transferring ownership. This unique capability enables various complex scenarios, empowering room owners to securely lease their property to contractors for predetermined durations and fees.
 Rooms can be equipped with all sorts of collaborative tools, the one we developed for the RndHackathon is a RAG (LLM interacting with a database of organizational psychology resources), the RAG is called Eva and requires land owners to submit an on-chan message (only gas fees) in order to give an answer, this allows both the land owner/project founder to get resources in a psychologivally safe environment (which the blockchain is not in particular for people who get money for good ideas) from a refined version of one of the most powerful AI on the market today and in return the DAO members can retrieve the messages for a give address onchain and see the situation with clarity.
 Humble.ai has reached out to me to try their new voice emphatic model recently and I would gladly submit this project to them if the hackathon goes well.
 
@@ -29,3 +29,11 @@ To start utilizing the DaoVerse Token Governance System, follow these steps:
 4. **Deploy and explore RoomMarketplace**: Publicly sell your room tokens on the RoomMarketplace, ensuring they are not currently rented or listed for rent.
 
 Feel free to contribute, provide feedback, or report issues.
+
+4 Contracts deployed on Arbitrum Sepholia, with a total deployment expense of past 0.4 ETH, addresses:
+
+[Daoverse](https://sepolia.arbiscan.io/address/0xc30058704d917e050d84999bd93a16a2e7c1b893)
+[TimeLock](https://sepolia.arbiscan.io/address/0x2dd67797f0c9db63500992819827abc2e3932a22)
+[DaoVerse Goverance](https://sepolia.arbiscan.io/address/0x46fcc2026b056e33c71cc3de99a5cb462a14383e)
+[Token MarketPlace](https://sepolia.arbiscan.io/address/0x27c1884b8b1487d7a727a61746151401e32499b1)
+
