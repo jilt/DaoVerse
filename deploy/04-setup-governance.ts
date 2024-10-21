@@ -10,7 +10,7 @@ const setupContracts: DeployFunction = async function (hre: HardhatRuntimeEnviro
     const timeLock = await ethers.getContract("TimeLock", deployer);
     const governor = await ethers.getContract("DaoVerseGovernor", deployer);
 
-    log("Setting up roles...");
+    console.log("Setting up roles...");
     const proposerRole = ethers.id("PROPOSER_ROLE");
     const executorRole = ethers.id("EXECUTOR_ROLE")
     const adminRole = ethers.id("TIMELOCK_ADMIN_ROLE");

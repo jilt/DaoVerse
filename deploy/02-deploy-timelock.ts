@@ -5,9 +5,9 @@ import {ethers} from 'hardhat';
 
 const deployTimeLock: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
     const {getNamedAccounts, deployments, network} = hre;
-    const {deploy, log} = deployments;
+    const {deploy} = deployments;
     const {deployer} = await getNamedAccounts();
-    log("Deploying Timelock Contract...");
+    console.log("Deploying Timelock Contract...");
 
     const timelockContract = await deploy("TimeLock", {
         from: deployer,
@@ -15,7 +15,7 @@ const deployTimeLock: DeployFunction = async function (hre: HardhatRuntimeEnviro
         log: true,
     });
 
-    log(`Deployed DaoVerse token to address ${timelockContract.address}`)
+    console.log(`Deployed DaoVerse token to address ${timelockContract.address}`)
 
 };
 

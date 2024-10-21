@@ -10,7 +10,7 @@ const deployGovernorContract: DeployFunction = async function (hre: HardhatRunti
     const daoVerseToken = await get("DaoVerse");
     const timeLock = await get("TimeLock")
 
-    log("Deploying Governor Contract...");
+    console.log("Deploying Governor Contract...");
 
     const governorContract = await deploy("DaoVerseGovernor", {
         from: deployer,
@@ -18,7 +18,7 @@ const deployGovernorContract: DeployFunction = async function (hre: HardhatRunti
         log: true,
     });
 
-    log(`Deployed Governor Contract to address ${governorContract.address}`)
+    console.log(`Deployed Governor Contract to address ${governorContract.address}`)
 
 };
 

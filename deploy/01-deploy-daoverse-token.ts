@@ -3,6 +3,20 @@ import {DeployFunction} from 'hardhat-deploy/types';
 import { BASE_URI } from '../helper-hardhat-config';
 import {ethers} from 'hardhat';
 
+async function main() {
+    const daoVerse = await hre.ethers.deployContract("DaoVerse")
+    await daoVerse.waitForDeployment()
+  
+    console.log(`DaoVerse contract deployed to ${await daoVerse.getAddress()}`)
+  }
+  
+  // We recommend this pattern to be able to use async/await everywhere
+  // and properly handle errors.
+  main().catch((error) => {
+    console.error(error);
+    process.exitCode = 1;
+  });
+  
 const deployDaoVerseToken: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
     const {getNamedAccounts, deployments} = hre;
     const {deploy, log} = deployments;
@@ -15,11 +29,11 @@ const deployDaoVerseToken: DeployFunction = async function (hre: HardhatRuntimeE
         log: true,
     })
 
-    log(`Deployed DaoVerse token to address ${daoverseToken.address}`)
+    console.log(`Deployed DaoVerse token to address ${daoverseToken.address}`)
 
-    log(`Delegating to ${deployer}`)
+    console.log(`Delegating to ${deployer}`)
     await delegate(daoverseToken.address, deployer)
-    log("Delegated!")
+    console.log("Delegated!")
 };
 
 const delegate = async (daoverseTokenAddress: string, delegatedAccount: string) => {

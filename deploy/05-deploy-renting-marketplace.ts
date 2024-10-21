@@ -9,7 +9,7 @@ const rentingMarketplace: DeployFunction = async function (hre: HardhatRuntimeEn
 
     
 
-    log("Deploying RentRoom...");
+    console.log("Deploying RentRoom...");
 
     const rentRoom = await deploy("RentRoom", {
         from: deployer,
@@ -22,7 +22,7 @@ const rentingMarketplace: DeployFunction = async function (hre: HardhatRuntimeEn
     const transferOwnerTx = await rentRoomContract.getFunction("transferOwnership")( await timeLock.getAddress())
     await transferOwnerTx.wait(1);
 
-    log(`Deployed rentRoom to address ${rentRoom.address}`)
+    console.log(`Deployed rentRoom to address ${rentRoom.address}`)
 
 };
 
