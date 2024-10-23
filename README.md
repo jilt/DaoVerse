@@ -38,4 +38,5 @@ Feel free to contribute, provide feedback, or report issues.
 [Token MarketPlace](https://sepolia.arbiscan.io/address/0x27c1884b8b1487d7a727a61746151401e32499b1)
 
 # 3D interactive metaverse instance
-[UI](https://github.com/jilt/DAOVerse-3D)
+[UI repo](https://github.com/jilt/DAOVerse-3D)
+[websocket configuration](https://github.com/jilt/DAOVerse-websocket)
